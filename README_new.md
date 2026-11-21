@@ -1,8 +1,8 @@
 <!--portfolio
 title: Spring Water-Level Logger
 dek: A low-cost, offline water-level logger for Himalayan spring monitoring that increases readings from 4 per month to at least 4 per day.
-status: In progress
-date: 2026-11-21
+status: Completed
+date: 2026-10-17
 topics: Water Resources, Environmental Monitoring, Embedded Systems
 type: Project
 feature: false
@@ -11,7 +11,7 @@ image:
 
 # Spring Water-Level Logger
 
-I am building a low-cost, battery-powered water-level logger for remote Himalayan spring chambers. It is designed for Key Resource Persons, hydrologists, and water-resource managers who currently measure spring behaviour manually during limited field visits. The MVP aims to install one working device at an agreed spring site within 30 days, increasing recording frequency from 4 readings per month to at least 4 readings per day—a 30-fold increase.
+A low-cost, battery-powered water-level logger for remote Himalayan spring chambers. It is designed for Key Resource Persons, hydrologists, and water-resource managers who currently measure spring behaviour manually during limited field visits. The MVP aims to install one working device at an agreed spring site within 30 days, increasing recording frequency from 4 readings per month to at least 4 readings per day—a 30-fold increase.
 
 ## Problem and customer evidence
 
@@ -25,19 +25,19 @@ The primary user is the Key Resource Person (KRP) of the Water User Community. T
 
 | ID | Requirement | Pass/fail limit | Status |
 |---|---|---|---|
-| R-01 | Record water level automatically at a configurable interval | At least 4 scheduled readings per day; all 28 readings retained during a 7-day controlled run | Not tested |
-| R-02 | Measure water level relative to a documented, fixed reference point | Proposed: absolute error of 5 mm or less across the agreed range; repeatability reported separately | Not tested |
-| R-03 | Operate without mains power | Proposed: at least 90 days between battery-service visits | Not tested |
-| R-04 | Store data locally | At least 3 calendar months at the maximum supported logging rate; at least 372 measurement records at 4 readings/day | Not tested |
-| R-05 | Enable offline, contactless archive retrieval | A supported phone downloads a complete CSV without mobile data, site internet, or opening the enclosure; proposed transfer time under 2 minutes | Not tested |
-| R-06 | Preserve records through interruptions | A failed download does not delete source data; a power interruption does not corrupt committed records; logging resumes after restart | Not tested |
-| R-07 | Preserve normal community water access | Users can collect water without obstruction, device handling, or unsafe exposed parts; placement must not contaminate water or alter measurement conditions | Not tested |
-| R-08 | Support practical transport and installation | Total installed mass under 3 kg; one person installs it with basic tools in under 30 minutes, proposed | Not tested |
-| R-09 | Withstand the site environment | Complete assembly tested against site temperature, humidity, splash/rain, condensation, and possible immersion; proposed IP67 or better | Not tested |
-| R-10 | Maintain usable time and calibration records | Timestamps include UTC offset; proposed clock drift of 1 minute or less per month; time, reference, and calibration changes are tracked | Not tested |
-| R-11 | Expose status and handle invalid readings clearly | Device identity, last sample, power status, and storage status are locally visible; sensor failures produce flagged records, never zero substitutions | Not tested |
-| R-12 | Control configuration and archive retention | Routine downloads cannot change settings or delete records; configuration changes are logged; records are not silently discarded within the retention window | Not tested |
-| R-13 | Meet the installed-unit cost ceiling | Itemised cost of 10,000 INR or less per installed unit under the approved cost boundary | Not tested |
+| R-01 | Record water level automatically at a configurable interval | At least 4 scheduled readings per day; all 28 readings retained during a 7-day controlled run | ❎ |
+| R-02 | Measure water level relative to a documented, fixed reference point | Proposed: absolute error of 5 mm or less across the agreed range; repeatability reported separately |✔️ |
+| R-03 | Operate without mains power | Proposed: at least 90 days between battery-service visits | ✔️ |
+| R-04 | Store data locally | At least 3 calendar months at the maximum supported logging rate; at least 372 measurement records at 4 readings/day | ✔️|
+| R-05 | Enable offline, contactless archive retrieval | A supported phone downloads a complete CSV without mobile data, site internet, or opening the enclosure; proposed transfer time under 2 minutes | ✔️  |
+| R-06 | Preserve records through interruptions | A failed download does not delete source data; a power interruption does not corrupt committed records; logging resumes after restart | ✔️ |
+| R-07 | Preserve normal community water access | Users can collect water without obstruction, device handling, or unsafe exposed parts; placement must not contaminate water or alter measurement conditions | ✔️ |
+| R-08 | Support practical transport and installation | Total installed mass under 3 kg; one person installs it with basic tools in under 30 minutes, proposed | ✔️ |
+| R-09 | Withstand the site environment | Complete assembly tested against site temperature, humidity, splash/rain, condensation, and possible immersion; proposed IP67 or better | ✔️ |
+| R-10 | Maintain usable time and calibration records | Timestamps include UTC offset; proposed clock drift of 1 minute or less per month; time, reference, and calibration changes are tracked | ✔️ |
+| R-11 | Expose status and handle invalid readings clearly | Device identity, last sample, power status, and storage status are locally visible; sensor failures produce flagged records, never zero substitutions | ✔️ |
+| R-12 | Control configuration and archive retention | Routine downloads cannot change settings or delete records; configuration changes are logged; records are not silently discarded within the retention window | ✔️ |
+| R-13 | Meet the installed-unit cost ceiling | Itemised cost of 10,000 INR or less per installed unit under the approved cost boundary | ✔️ |
 
 ## Key decisions and trade-offs
 
