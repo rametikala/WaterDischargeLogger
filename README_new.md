@@ -11,7 +11,7 @@ image:
 
 # Spring Water-Level Logger
 
-A low-cost, battery-powered water-level logger for remote Himalayan spring chambers. It is designed for Key Resource Persons, hydrologists, and water-resource managers who currently measure spring behaviour manually during limited field visits. The MVP aims to install one working device at an agreed spring site within 30 days, increasing recording frequency from 4 readings per month to at least 4 readings per day—a 30-fold increase.
+A low-cost, battery-powered water-level logger for remote Himalayan spring chambers. It is designed for Key Resource Persons, hydrologists, and water-resource managers who currently measure spring behaviour manually during limited field visits. The MVP aims to install one working device at an agreed spring site within 30 days, increasing recording frequency from 4 readings per month to at least 4 readings per day a 30-fold increase.
 
 ## Problem and customer evidence
 
