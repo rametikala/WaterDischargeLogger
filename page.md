@@ -6,7 +6,7 @@ date: 2026-10-17
 topics: Water Resources, Environmental Monitoring, Embedded Systems
 type: Project
 feature: false
-image: 
+image: Image.png
 -->
 
 # Spring Water-Level Logger
