@@ -125,7 +125,7 @@ Key disagreements to resolve before design freeze include whether water-level lo
 
 | Failures | Measure | Reason | Workaround |
 |-|-|-|-|
-| Battery capacity issue |Proposed Battery life 90 days <br> Achieved Battery life 72 days  |The 2,200 mAh battery currently supports logging for only 2 days at a 10-minute interval | *Long Term* : Replace the high-power ESP32 with an nRF52-series low-power microcontroller <br> *Short term* : Increasing the battery capacity |
+| Battery capacity issue |Proposed Battery life 90 days <br> Achieved Battery life 72 days  |The 2,200 mAh battery currently supports logging for only 2 days at a 10-minute interval | *Long Term* : Replace the high-power chip with low-power microcontroller <br> *Short term* : Increasing the battery capacity |
 
 No other build or field failures have been recorded yet. The major challenge was enabling wireless data transfer for the field person without rapidly draining the battery. If a high-energy wireless system such as Wi-Fi remained active all day, the device would run out of battery within 2–3 hours.
 
